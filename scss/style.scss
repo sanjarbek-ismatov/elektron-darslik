@@ -1,4 +1,95 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Moon-Dance';
+    src: url(../fonts/MoonDance/MoonDance-Regular.ttf) format('truetype');
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(107, 101, 50);
+    font-family: 'Moon-Dance';
+    font-size: 7vw;
+    background-image: url('../images/heading.jpg');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 70px;
+    background-color: #16166d;
+}
+
+.header {
+    position: sticky;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .header-logo {
+        text-align: center;
+        width: 300px;
+        color: rgb(206, 206, 206);
+        font-size: 25px;
+    }
+    .header-darkmode {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        color: rgb(206, 206, 206);
+        font-size: 15px;
+        text-align: center;
+        #darkmode {
+            margin: auto 5px;
+            padding: 7px 35px;
+            font-size: 15px;
+            font-family: 'Roboto-Medium';
+            cursor: pointer;
+            background-color: #0c0ce2;
+            border: none;
+            color: #fff;
+            transition-duration: 500ms;
+            border-radius: 20px;
+        }
+        #darkmode:hover {
+            background-color: #4747ff;
+        }
+    }
+    .header-menu {
+        width: 100%;
+        .header-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            a {
+                text-decoration: none;
+                font-size: 30px;
+                color: rgb(212, 212, 212);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .header .header-menu .header-list {
+        display: none;
+    }
 }

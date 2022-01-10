@@ -1,5 +1,123 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Moon-Dance';
+  src: url(../fonts/MoonDance/MoonDance-Regular.ttf) format("truetype");
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #6b6532;
+  font-family: 'Moon-Dance';
+  font-size: 7vw;
+  background-image: url("../images/heading.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 70px;
+  background-color: #16166d;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  font-family: 'Roboto';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header .header-logo {
+  text-align: center;
+  width: 300px;
+  color: #cecece;
+  font-size: 25px;
+}
+
+.header .header-darkmode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  color: #cecece;
+  font-size: 15px;
+  text-align: center;
+}
+
+.header .header-darkmode #darkmode {
+  margin: auto 5px;
+  padding: 7px 35px;
+  font-size: 15px;
+  font-family: 'Roboto-Medium';
+  cursor: pointer;
+  background-color: #0c0ce2;
+  border: none;
+  color: #fff;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  border-radius: 20px;
+}
+
+.header .header-darkmode #darkmode:hover {
+  background-color: #4747ff;
+}
+
+.header .header-menu {
+  width: 100%;
+}
+
+.header .header-menu .header-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .header-menu .header-list a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #d4d4d4;
+}
+
+@media only screen and (max-width: 1100px) {
+  .header .header-menu .header-list {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
